@@ -8,11 +8,14 @@
       "typescript": "3.3.3333"
    },
    "dependencies": {
+      "fastify": "^3.15.1",
       "mysql": "^2.14.1",
       "reflect-metadata": "^0.1.10",
+      "ts-node-dev": "^1.1.6",
       "typeorm": "^0.2.32"
    },
    "scripts": {
-      "start": "ts-node src/index.ts"
+      "dev": "ts-node-dev src/index.ts",
+      "build": "tsc -p tsconfig.json"
    }
 }
